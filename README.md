@@ -1,50 +1,112 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🎞️ FrameFlow – Seamless Video Sharing App
 
-## Get started
+FrameFlow is a **full-stack React Native mobile application** built using **Expo** and powered by **Appwrite**. It lets users upload and explore short-form videos in a minimal, modern interface. With real-time updates, search capabilities, and smooth playback, FrameFlow delivers a fluid video-sharing experience.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📸 Screenshots
 
-2. Start the app
+| Home Feed | Upload Video | Search |
+|----------|--------------|--------|
+| ![Home](assets/screenshots/home.png) | ![Upload](assets/screenshots/upload.png) | ![Search](assets/screenshots/search.png) |
 
-   ```bash
-    npx expo start
-   ```
+> 📍 *Replace these with actual screenshot paths from your repo (`/assets/screenshots/`).*
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🚀 Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 📱 **Full-Stack React Native App** – Built using Expo, powered by Appwrite backend  
+- 📤 **Post Your Favorite Video** – Easily upload and share your video content  
+- 🆕 **Find the Latest Videos** – Discover newly uploaded and trending content  
+- 🔍 **Play While Searching** – Seamlessly scroll and search without interrupting playback  
+- 💡 **Smooth & Seamless UI** – Gradient styling, custom fonts, and responsive design  
+- 🔐 **User Authentication** – Secure sign-up/sign-in flows with session management  
+- 🎥 **Trending Feed** – Scrollable list of all videos with clean cards  
+- 🔎 **Search Functionality** – Real-time keyword search across the video database  
+- 💤 **Empty State Screens** – Friendly UI when no results or content is available  
+- 🔁 **Pull to Refresh** – Instantly fetch the latest videos on swipe  
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🛠️ Tech Stack
+
+- **Frontend:** React Native + Expo + Tailwind CSS (via NativeWind)
+- **Backend:** Appwrite (Database, Storage, Authentication)
+- **Fonts:** Custom Google Fonts (Poppins Family)
+- **Navigation:** `expo-router` for file-based routing
+- **State Management:** Context API with GlobalProvider
+- **Video Uploads:** Appwrite Storage Bucket integration
+
+---
+
+## 🧑‍💻 How to Run
+
+### 1. Clone the repo
 
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/frameflow.git
+cd frameflow
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 3. Setup `.env`
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Create a `.env` file and add:
 
-## Join the community
+```env
+APPWRITE_ENDPOINT=your_appwrite_endpoint
+APPWRITE_PROJECT_ID=your_project_id
+APPWRITE_BUCKET_ID=your_storage_bucket_id
+```
 
-Join our community of developers creating universal apps.
+### 4. Start the app
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start
+```
+
+> Make sure your Appwrite server is running and properly configured.
+
+---
+
+## 📁 Folder Structure
+
+```bash
+├── app
+│   ├── (auth)        # SignIn / SignUp screens
+│   ├── (tabs)        # Bottom tab navigation screens
+│   ├── search        # Dynamic search screen
+│   └── _layout.jsx   # Root layout with splash + font handling
+│
+├── assets            # Fonts and images
+├── components        # UI components (SearchInput, VideoCard, etc.)
+├── context           # GlobalProvider (Context API)
+├── constants         # Static assets and config
+├── lib               # Appwrite integration and helpers
+├── global.css        # Tailwind / NativeWind styles
+```
+
+---
+
+## 🙌 Acknowledgements
+
+- [Expo](https://expo.dev/)
+- [Appwrite](https://appwrite.io/)
+- [React Native](https://reactnative.dev/)
+- [NativeWind (Tailwind for RN)](https://www.nativewind.dev/)
+- [Poppins Font](https://fonts.google.com/specimen/Poppins)
+
+---
+
+## 💡 Author
+
+**Abhyodaya Singh**  
+🎓 CSE, MMMUT | 👨‍💻 Passionate about mobile dev and full-stack projects  
+🔗 [LinkedIn](https://linkedin.com/in/your-profile) | [GitHub](https://github.com/your-username)
