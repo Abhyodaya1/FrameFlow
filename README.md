@@ -3,17 +3,6 @@
 
 FrameFlow is a **full-stack React Native mobile application** built using **Expo** and powered by **Appwrite**. It lets users upload and explore short-form videos in a minimal, modern interface. With real-time updates, search capabilities, and smooth playback, FrameFlow delivers a fluid video-sharing experience.
 
----
-
-## 📸 Screenshots
-
-| Home Feed | Upload Video | Search |
-|----------|--------------|--------|
-| ![Home](assets/screenshots/home.png) | ![Upload](assets/screenshots/upload.png) | ![Search](assets/screenshots/search.png) |
-
-> 📍 *Replace these with actual screenshot paths from your repo (`/assets/screenshots/`).*
-
----
 
 ## 🚀 Features
 
@@ -109,4 +98,4 @@ npx expo start
 
 **Abhyodaya Singh**  
 🎓 CSE, MMMUT | 👨‍💻 Passionate about mobile dev and full-stack projects  
-🔗 [LinkedIn](https://linkedin.com/in/your-profile) | [GitHub](https://github.com/your-username)
+[GitHub](https://github.com/Abhyodaya1)
